@@ -71,7 +71,7 @@ form {
     margin: 20px 0;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: auto 35px auto;
+    grid-template-columns: 10rem 35px auto;
     grid-column-gap: 0.5rem;
 }
 
@@ -96,7 +96,7 @@ input:focus {
 .addTaskButton {
     height: 35px;
     width: 2rem;
-    border-radius: 40%;
+    border-radius: 30%;
     font-size: 18px;
     background-color: var(--diabled);
 }
@@ -104,7 +104,7 @@ input:focus {
 .deleteTaskButton{
     height: 35px;
     width: 2rem;
-    border-radius: 40%;
+    border-radius: 30%;
     font-size: 18px;
     background-color: var(--diabled);
 }
@@ -112,6 +112,8 @@ input:focus {
 .orderButton {
     background-color: var(--secondary);
     color: var(--light);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
 }
 
 .task {
@@ -124,6 +126,6 @@ input:focus {
 
 .done {
     background-color: var(--primary);
-    text-decoration: line-through 5px #0A2F35 ;
+    text-decoration: line-through 3px #0A2F35 ;
     color: var(--dark);
 }
