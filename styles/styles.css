@@ -3,3 +3,127 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary: #94c563;
+    --secondary: #d33f3f;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+    background-image: linear-gradient(225deg, #00d3ff 0, #219cd5 50%, #2c6990 100%);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 0.5rem;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.deleteTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    width: 2rem;
+    border-radius: 40%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.deleteTaskButton{
+    height: 35px;
+    width: 2rem;
+    border-radius: 40%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--diabled);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--primary);
+    text-decoration: line-through 5px #0A2F35 ;
+    color: var(--dark);
+}
