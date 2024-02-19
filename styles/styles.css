@@ -3,3 +3,154 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --primary: #94c563;
+    --secondary: #d33f3f;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+    background-image: linear-gradient(225deg, #00d3ff 0, #219cd5 50%, #2c6990 100%);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.container {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    background-image: url("./../assets/to-do.png");
+    background-size:20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: double black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    
+}
+
+.dateRight{
+    margin-top: 4rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    padding: 0.2rem;
+    background-color: #fff5ae;
+    margin-top: 4rem;
+    margin-right: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 10rem 35px auto;
+    grid-column-gap: 0.5rem;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+    font-size: large;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.deleteTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.orderButton:hover{
+    background-color: red;
+}
+
+.deleteTaskButton:hover{
+    background-color: #BABCBD;
+}
+
+.addTaskButton:hover{
+    background-color: #BABCBD;
+}
+
+.addTaskButton,
+.deleteTaskButton {
+    height: 35px;
+    width: 2rem;
+    border-radius: 30%;
+    font-size: 18px;
+    background-color: var(--diabled);
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.task {
+    background-color: var(--diabled);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--dark);
+    cursor: pointer;
+    border-radius: 1.4rem;
+}
+
+.task:hover{
+    background-color: #DCE1E2;
+}
+
+.done {
+    background-color: var(--primary);
+    text-decoration: line-through 3px #0A2F35 ;
+    color: var(--dark);
+}
