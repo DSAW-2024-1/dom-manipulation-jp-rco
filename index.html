@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="list roundBorder">
+    <div class="list container">
       <div class="date">
         <div class="dateRight" >
             <div id="dateNumber"></div>
@@ -22,10 +22,10 @@
         <div id="dateText"></div>
       </div>
       <form onsubmit="addNewTask(event)">
-        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
-        <button type="delete" class="deleteTaskButton">-</button>
-        <button type="submit" class="addTaskButton">+</button>
-        <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="container">
+            <button type="delete" class="deleteTaskButton">-</button>
+            <button type="submit" class="addTaskButton">+</button>
+          <button type="button" class="orderButton container" onclick="renderOrderedTasks()">Ordenar</button>
       </form>
       <div id="tasksContainer"></div>
     </div>
